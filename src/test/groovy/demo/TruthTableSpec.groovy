@@ -3,6 +3,15 @@ package demo
 import spock.lang.Specification;
 
 class TruthTableSpec extends Specification {
+  def "NOT"() {
+    expect:
+      (!A) == result
+    where:
+      A     | result
+      true  | false
+      false | true
+  }
+  
   def "AND"() {
     expect:
       (A & B) == result

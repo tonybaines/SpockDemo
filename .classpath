@@ -3,7 +3,7 @@
 <classpath>
   <classpathentry kind="src" path="src/main/java"/>
   <classpathentry kind="output" path="ide/build"/>
-  <classpathentry kind="src" path="src/test/unit" output="build/classes/test"/>
+  <classpathentry kind="src" path="src/test/groovy" output="build/classes/test"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/antlr/antlr/jars/antlr-2.7.7.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/asm/asm-analysis/jars/asm-analysis-3.2.jar"/>
@@ -11,9 +11,11 @@
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/asm/asm-tree/jars/asm-tree-3.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/asm/asm-util/jars/asm-util-3.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/asm/asm/jars/asm-3.2.jar"/>
+  <classpathentry kind="lib" path="/home/tony/.gradle/cache/cglib/cglib-nodep/jars/cglib-nodep-2.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/commons-cli/commons-cli/jars/commons-cli-1.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/junit/junit/jars/junit-4.8.1.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/org.codehaus.groovy/groovy-all/jars/groovy-all-1.7.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/org.codehaus.groovy/groovy/jars/groovy-1.7.4.jar"/>
+  <classpathentry kind="lib" path="/home/tony/.gradle/cache/org.objenesis/objenesis/jars/objenesis-1.2.jar"/>
   <classpathentry kind="lib" path="/home/tony/.gradle/cache/org.spockframework/spock-core/jars/spock-core-0.4-groovy-1.7.jar"/>
 </classpath>

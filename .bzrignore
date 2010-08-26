@@ -2,3 +2,4 @@ bin
 .gradle
 ide
 build
+.classpath.old
