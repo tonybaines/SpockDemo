@@ -7,7 +7,6 @@ class MicroBlogSpec extends Specification {
   def "should recieve the list of messages provided by the service"() {
     setup:
       def service = Mock(Service) // This is a Spock mock
-      def expectedMessages =  ['Having breakfast. Cereal.']
       def microBlog = new MicroBlog(service)
     when:
       def rxMsgs = microBlog.getMessages()
@@ -15,6 +14,12 @@ class MicroBlogSpec extends Specification {
       // Assertions and mock expectations are all defined/verified here
       service.getMessages() >> expectedMessages
       rxMsgs == expectedMessages
+    where:
+      expectedMessages << [
+        []
+       ,['Having breakfast. Cereal.']
+       ,['Having breakfast. Cereal.', 'Brushing teeth.  Toothpaste on phone.']
+      ]
   }
   
   def "should throw an error if the service is unavailable"() {
@@ -28,4 +33,5 @@ class MicroBlogSpec extends Specification {
       def e = thrown(java.net.ConnectException)
       e.message == "I'm in a maze of routes, all alike"
   }
+  
 }

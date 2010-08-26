@@ -1,3 +1,6 @@
+// This is a fairly minimal gradle script for working with Spock
+// see http://code.google.com/p/spock/source/browse/branches/groovy-1.7/spock-example/build.gradle
+// for an example enabling optional features
 apply plugin: 'groovy'
 apply plugin: 'code-quality'
 apply plugin: 'eclipse'
