@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/unit"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/antlr/antlr/jars/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/asm/asm-analysis/jars/asm-analysis-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/asm/asm-commons/jars/asm-commons-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/asm/asm-tree/jars/asm-tree-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/asm/asm-util/jars/asm-util-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/asm/asm/jars/asm-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/commons-cli/commons-cli/jars/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/jline/jline/jars/jline-0.9.94.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/log4j/log4j/jars/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/net.sourceforge.cobertura/cobertura/jars/cobertura-1.9.3.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/org.apache.ant/ant/jars/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/org.codehaus.groovy/groovy/jars/groovy-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/home/bainesap/.gradle/cache/oro/oro/jars/oro-2.0.8.jar"/>
+	<classpathentry kind="output" path="ide/build"/>
+</classpath>
