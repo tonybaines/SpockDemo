@@ -7,7 +7,7 @@ apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/toolsNex
 apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/cobertura.gradle'
 
 eclipseCp.outputDirectory ='ide/build'
-eclipseCp.testSrcDirs = 'src/test/unit'
+eclipseCp.testSrcDirs = ['src/test/unit']
 task debug << {
   eclipseCp.metaClass.properties.each {println it.name }
 }
