@@ -1,0 +1,618 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+ 
+
+
+ 
+ 
+ 
+
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = "9ea9e27f3925c0cf36e1a61a2ca3ab4b";
+ 
+ 
+ var logged_in_user_email = "Tony.Baines.1@googlemail.com";
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>GettingStarted - 
+ spock -
+ 
+ Run your first Spock specification. - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <link type="text/css" rel="stylesheet" href="GettingStarted_files/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="GettingStarted_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="http://code.google.com/feeds/p/spock/svnchanges/basic?path=/wiki/GettingStarted.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8688443596719512860/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+<script src="GettingStarted_files/ga.js" async="" type="text/javascript"></script></head><body class="t6">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-7292005-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ 
+ <b>Tony.Baines.1@gmail.com</b>
+ 
+ 
+ | <a href="http://code.google.com/u/Tony.Baines.1/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="http://code.google.com/u/Tony.Baines.1/" onclick="_CS_click('/gb/ph/profile');" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Fspock%2Fwiki%2FGettingStarted" onclick="_CS_click('/gb/ph/signout');"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px;"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+
+
+
+ <table style="padding: 0px; margin: 20px 0px 0px; width: 100%;" cellpadding="0" cellspacing="0">
+ <tbody><tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align: center;">
+ <a href="http://code.google.com/p/spock/">
+ 
+ <img src="GettingStarted_files/defaultlogo.png" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em;">
+ 
+ <div id="pname" style="margin: 0px 0px -3px;">
+ <a href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">spock</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">the enterprise ready specification framework</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space: nowrap; text-align: right;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q">
+ <input name="projectsearch" value="Search projects" type="submit">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+
+ 
+<table id="mt" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ <th onclick="if (!cancelBubble) _go('/p/spock/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/w/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/issues/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/source/checkout');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/source/checkout">Source</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</tbody></table>
+<table class="st" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+ <tbody><tr>
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/spock/w/list" method="GET" style="display: inline;">
+ <select id="can" name="can" style="font-size: 92%;">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5" {is="" can="" 5="" }selected="selected" {end}="">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input size="38" id="searchq" name="q" autocomplete="off" style="font-size: 92%;" type="text"></span>
+ 
+ 
+ <input value="Search" style="font-size: 92%;" type="submit">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="bevel-right" height="4" valign="top" align="right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</tbody></table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol">
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+
+ <style type="text/css">
+ .artifactcomment {
+ margin: .5em 0 0 0;
+ padding: .3em 0 .3em .3em;
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentlist {
+ border-bottom: 3px solid #c3d9ff;
+ }
+ #commentform { padding-top: 1em; }
+ .delcom { background: #e8e8e8 }
+ .commentcontent { margin: 1em 0;}
+ </style>
+
+
+ <div id="wikicontent">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ 
+ <td class="vt" id="wikimaincol" width="100%">
+ 
+ <div style="float: right; width: 18em;" id="wikimeta">
+ <div class="pmeta_bubble_bg">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <table style="padding: 5px;">
+ <tbody><tr><td colspan="2" style="padding-bottom: 5px;">Updated <span title="Sat Apr  3 06:51:49 2010">Apr 03, 2010</span>
+ 
+ by <a style="white-space: nowrap;" href="http://code.google.com/u/pniederw/">pniederw</a>
+ </td></tr>
+ 
+ <tr><th class="vt">Labels:</th>
+ <td>
+ 
+ <a href="http://code.google.com/p/spock/w/list?q=label:Featured" title="Listed on project home page">Featured</a>
+ 
+ </td>
+ </tr>
+ 
+ 
+ </tbody></table>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ </div>
+ 
+ <div id="wikiheader" style="margin-bottom: 1em;">
+ 
+ <img id="star_img" src="GettingStarted_files/star_off.gif" style="cursor: pointer;" onclick="_CS_toggleStar(this,
+ '',
+ {'scope': 'wiki',
+ 'user': '_CURRENT_USER',
+ 'item': 'spock:GettingStarted',
+ 'token': codesite_token
+ });" height="15" width="15">
+ 
+ &nbsp;
+ <span style="font-size: 120%; font-weight: bold;">GettingStarted</span>
+ &nbsp;
+ 
+ 
+ <div style="font-style: italic; margin-top: 3px;">Run your first Spock specification.</div>
+ 
+ </div>
+ <p>The easiest way to get to know Spock is <a href="http://meet.spockframework.org/" rel="nofollow">http://meet.spockframework.org</a>, which instantly lets you view, edit, run and even publish Spock specifications for others to see. Zero install required! </p><p>If you prefer to run Spock on your machine, just download the example project (<a href="http://spock.googlecode.com/files/spock-example-0.3.zip" rel="nofollow">spock-example-0.3.zip</a>) and type <tt>./gradlew test</tt> (Windows: <tt>gradlew test</tt>).
+ Seconds later, you will be running your first Spock specifications. The
+ only prerequisite is that you have JDK 5 or higher installed; 
+everything else will be downloaded automatically. Also included are 
+build scripts for Ant and Maven. For further instructions, see the 
+README file. </p><p>Need help? Ask in our <a href="http://groups.google.com/group/spockframework" rel="nofollow">forum</a>! </p><hr><p>The remainder of this page explains in detail how to run <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> in the following environments: </p><p></p><ul><ul><li><a href="#Command_line">Command line</a></li><li><a href="#Ant">Ant</a></li><li><a href="#Gradle">Gradle</a></li><li><a href="#Maven">Maven</a></li><li><a href="#Eclipse">Eclipse</a></li><li><a href="#IntelliJ_IDEA">IntelliJ IDEA</a></li><li><a href="#Netbeans">Netbeans</a></li></ul></ul>   <h2><a name="Command_line">Command line</a><a href="#Command_line" class="section_anchor">¶</a></h2><ul><li>Download and setup Java 5 or higher (JRE will do for our purposes) </li><li>Download and setup Groovy 1.6.7 binary release (<a href="http://groovy.codehaus.org/Download" rel="nofollow">download page</a>) </li></ul><p>Detailed instructions for these two steps can be found in the <a href="http://groovy.codehaus.org/Tutorial+1+-+Getting+started" rel="nofollow">Groovy tutorial</a>. </p><ul><li>Download junit-4.7.jar (<a href="http://sourceforge.net/projects/junit/files/" rel="nofollow">download page</a>) </li><li>Download spock-core-0.3.jar (<a href="http://code.google.com/p/spock/downloads/list" rel="nofollow">download page</a>) </li><li>Create a file named HelloSpock.groovy with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> </li><li>Run HelloSpock with <tt>groovy -cp "junit-4.7.jar:spock-core-0.3.jar" HelloSpock</tt> (make sure the classpath is correct; on Windows, separate classpath entries with <tt>;</tt> instead of <tt>:</tt>) </li></ul><h2><a name="Ant">Ant</a><a href="#Ant" class="section_anchor">¶</a></h2><p>Verified against Ant 1.7 </p><ul><li>Create file build.xml with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpockBuildXml">build.xml</a> </li><li>Create file src/HelloSpock.groovy with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> </li><li>Run HelloSpock with <tt>ant test</tt> </li></ul><p>  </p><h2><a name="Gradle">Gradle</a><a href="#Gradle" class="section_anchor">¶</a></h2><p>Verified against Gradle 0.6 </p><ul><li>Create file build.gradle with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpockGradleScript">build.gradle</a> </li><li>Create file src/test/groovy/HelloSpock.groovy with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> </li><li>Run HelloSpock with <tt>gradle test</tt> </li></ul><h2><a name="Maven">Maven</a><a href="#Maven" class="section_anchor">¶</a></h2><p>Verified against Maven 2.1 </p><ul><li>Create file pom.xml with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpockPom">pom.xml</a> </li><li>Create file src/test/groovy/HelloSpock.groovy with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> </li><li>Run HelloSpock with <tt>mvn test</tt> </li></ul><h2><a name="Eclipse">Eclipse</a><a href="#Eclipse" class="section_anchor">¶</a></h2><p>The Groovy Eclipse plugin V2.0 provides solid Spock support. </p><p><strong>Important Information:</strong>  </p><ul><li>The Groovy Eclipse plugin is evolving rapidly. We recommend to use the latest snapshot from <a href="http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e3.5" rel="nofollow">http://dist.codehaus.org/groovy/distributions/greclipse/snapshot/e3.5</a>, and to update it frequently. </li><li>By
+ default, the Groovy Eclipse plugin uses Groovy 1.7 for building and 
+running your programs. For Groovy 1.7 you need Spock 
+0.4-groovy-1.7-SNAPSHOT, which is available from <a href="http://m2repo.spockframework.org/snapshots" rel="nofollow">http://m2repo.spockframework.org/snapshots</a>. From Spock 0.4 final onwards, the Groovy 1.7 version of Spock will also be available from Maven Central. </li><li>After
+ installing the Groovy Eclipse plugin, enable the following option: 
+Preferences-&gt;Groovy-&gt;Use monospace font for JUnit. Now all output 
+in the JUnit view should use the editor font (this is especially 
+important for Spock's condition output shown in the screenshot below). 
+If this doesn't work immediately, uncheck the option, press 'Apply', and
+ check the option again. </li><li>Make sure you have a source attachment set for the spock-core Jar. (Otherwise you might run into the following Eclipse JDT bug: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=175582" rel="nofollow">https://bugs.eclipse.org/bugs/show_bug.cgi?id=175582</a>) For Maven projects, the easiest way to achieve this is <tt>mvn eclipse:eclipse -DdownloadSources</tt>.   </li></ul><p>Here is a screenshot of Spock in action:  </p><p><img src="GettingStarted_files/HelloSpockScreenshotEclipse.html"> </p><p>For more information on the Groovy Eclipse plugin, go to <a href="http://groovy.codehaus.org/Eclipse+Plugin" rel="nofollow">http://groovy.codehaus.org/Eclipse+Plugin</a>. </p><h2><a name="IntelliJ_IDEA">IntelliJ IDEA</a><a href="#IntelliJ_IDEA" class="section_anchor">¶</a></h2><p>For IDEA 8.1.x: </p><ul><li>Download and extract Groovy 1.6.7 binary release (<a href="http://groovy.codehaus.org/Download" rel="nofollow">download page</a>) </li><li>Download junit-4.7.jar (<a href="http://sourceforge.net/projects/junit/files/" rel="nofollow">download page</a>)  </li><li>Download spock-core-0.3.jar (<a href="http://code.google.com/p/spock/downloads/list" rel="nofollow">download page</a>) </li><li>Create a new IDEA project named HelloSpock and add a Java module. </li><li>Add a Groovy facet and point the "Groovy SDK" to your Groovy folder </li><li>In "Module settings", add a "Single-Entry Module Library" for junit-4.7.jar, and another one for spock-core-0.3.jar </li><li>In the src folder, create a Groovy class named HelloSpock with the following content: <a href="http://code.google.com/p/spock/wiki/HelloSpock">HelloSpock.groovy</a> </li><li>In the "Project" window, right-click on HelloSpock and select "Run"  </li></ul><p>For IDEA 9: </p><ul><li>Same
+ as for IDEA 8.1.x, except that instead of a Groovy facet, a 
+"Single-Entry Module Library" for groovy-all-1.6.7.jar is added. </li></ul><p><img src="GettingStarted_files/HelloSpockScreenshotIdea.html"> </p><h2><a name="Netbeans">Netbeans</a><a href="#Netbeans" class="section_anchor">¶</a></h2><p>As
+ of Netbeans 6.7.1/6.8M1, the NetBeans Groovy plugin does not support 
+running JUnit 4 tests, and therefore Spock specifications. For general 
+information about the NetBeans Groovy plugin, go to <a href="http://groovy.codehaus.org/NetBeans+Plugin" rel="nofollow">http://groovy.codehaus.org/NetBeans+Plugin</a>. </p>
+ </td> 
+ </tr>
+ </tbody></table>
+ </div>
+
+
+ 
+ <br>
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by
+ 
+ <a style="white-space: nowrap;" href="http://code.google.com/u/@WRNQQ1xXBBRFWwQ%3D/">christia...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 14 01:48:46 2009">Apr 14, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>By using the current development version of the Groovy 1.6 plugin for
+ Eclipse the execution of Spock specifications within Eclipse works. The
+ plugin is available here: </p><blockquote><a href="http://dist.groovy.codehaus.org/distributions/updateDev_1.6/" rel="nofollow">http://dist.groovy.codehaus.org/distributions/updateDev_1.6/</a> 
+</blockquote>All you have to do is to create a "Run Configuration" for 
+the JUnit4 test runner. In my case Eclipse did not find the test class, 
+so I had to type it manually. But then running the tests worked just 
+fine. <p>Chris H. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by
+ 
+ <a style="white-space: nowrap;" href="http://code.google.com/u/pniederw/">pniederw</a>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 14 10:16:23 2009">Apr 14, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Hi Chris, </p><p>thanks for the hint! I'll give it a try and update the documentation. </p><p>Cheers, Peter </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by
+ 
+ <a style="white-space: nowrap;" href="http://code.google.com/u/jerome.lacoste/">jerome.lacoste</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jun 14 02:18:08 2010">Jun 14, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>For Intellij users, you might need to change the Compiler settings to
+ make sure groovy files are compiled. Otherwise, Intellij won't find the
+ class when trying to run them. (add !?<strong>.groovy to Compiler settings) </strong></p><p>(Tested using both maven 2.2.x and intellij 9.0.2 (IU-95.66) and spock 0.4 - groovy 1.7) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ 
+ 
+ 
+ 
+ 
+ <div id="commentform">
+ <form action="../w/detail.do" method="post">
+ <table>
+ <tbody><tr><td class="vt">
+ <input name="pagename" value="GettingStarted" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+ <div>Enter a comment:</div>
+ <textarea name="content" rows="6" cols="80"></textarea><br><br>
+ <input name="submit" value="Submit" type="submit">
+ </td>
+ <td class="vt">
+ <div id="whb" class="tip" style="width: 15em;">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner closed" id="entrybubble">
+ <a class="ifClosed" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='opened'">show</a>
+ <a class="ifOpened" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='closed'">hide</a>
+ <b>Wiki markup help</b>
+ <div class="ifOpened">
+ <div style="padding: 2px; font-size: 96%;">
+ =Heading1=<br>
+ ==Heading2==<br>
+ ===Heading3===<br>
+ <br>
+ *bold* &nbsp; &nbsp;
+ _italic_<br>
+ `inline code`<br>
+ escape: `*`<br>
+ <br>
+ Indent lists 2 spaces:<br>
+ &nbsp;&nbsp;* bullet item<br>
+ &nbsp;&nbsp;# numbered list<br>
+ <br>
+ {{{<br>
+ verbatim code block<br>
+ }}}<br>
+ <br>
+ Horizontal rule<br>
+ ----
+ <br>
+ <br>
+ WikiWordLink<br>
+ [http://domain/page&nbsp;label]<br>
+ http://domain/page<br>
+ <br>
+ || table || cells ||<br>
+ 
+ </div><br>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new">More
+ examples</a>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new"><img src="GettingStarted_files/tearoff_icon.gif" height="16" width="16"></a>
+ </div>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+</div>
+<input name="wikihelp" id="wikihelp" value="closed" type="hidden">
+
+ </td></tr>
+ </tbody></table>
+ </form>
+ </div>
+ 
+ 
+ 
+
+<form name="delcom" action="../w/delComment.do" method="POST">
+ <input name="sequence_num" value="" type="hidden">
+ <input name="create_time" value="" type="hidden">
+ <input name="mode" value="" type="hidden">
+ <input name="pagename" value="GettingStarted" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+</form>
+
+
+
+ <script src="GettingStarted_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="GettingStarted_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ <script type="text/javascript" src="GettingStarted_files/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="GettingStarted_files/codesite_product_dictionary_ph.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ ©2010 Google -
+ <a href="http://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="http://code.google.com/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ <div style="position: absolute; display: none; top: 19px; left: 1129px;" id="menuDiv-projects-dropdown" class="menuDiv instance0"><div class="menuCategory controls first"><hr class="menuSeparator"><a href="http://code.google.com/more/" style="display: block;" class="menuItem">Find developer products...</a><a href="http://code.google.com/hosting/" style="display: block;" class="menuItem">Find open source projects...</a></div></div></body></html>

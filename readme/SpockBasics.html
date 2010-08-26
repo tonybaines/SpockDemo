@@ -1,0 +1,683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+ 
+
+
+ 
+ 
+ 
+
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = "9ea9e27f3925c0cf36e1a61a2ca3ab4b";
+ 
+ 
+ var logged_in_user_email = "Tony.Baines.1@googlemail.com";
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>SpockBasics - 
+ spock -
+ 
+ Anatomy of a Spock specification. - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <link type="text/css" rel="stylesheet" href="SpockBasics_files/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="SpockBasics_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="http://code.google.com/feeds/p/spock/svnchanges/basic?path=/wiki/SpockBasics.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8688443596719512860/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+<script src="SpockBasics_files/ga.js" async="" type="text/javascript"></script></head><body class="t6">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-7292005-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ 
+ <b>Tony.Baines.1@gmail.com</b>
+ 
+ 
+ | <a href="http://code.google.com/u/Tony.Baines.1/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="http://code.google.com/u/Tony.Baines.1/" onclick="_CS_click('/gb/ph/profile');" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Fspock%2Fwiki%2FSpockBasics" onclick="_CS_click('/gb/ph/signout');"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px;"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+
+
+
+ <table style="padding: 0px; margin: 20px 0px 0px; width: 100%;" cellpadding="0" cellspacing="0">
+ <tbody><tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align: center;">
+ <a href="http://code.google.com/p/spock/">
+ 
+ <img src="SpockBasics_files/defaultlogo.png" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em;">
+ 
+ <div id="pname" style="margin: 0px 0px -3px;">
+ <a href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">spock</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">the enterprise ready specification framework</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space: nowrap; text-align: right;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q">
+ <input name="projectsearch" value="Search projects" type="submit">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+
+ 
+<table id="mt" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ <th onclick="if (!cancelBubble) _go('/p/spock/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/w/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/issues/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/source/checkout');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/source/checkout">Source</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</tbody></table>
+<table class="st" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+ <tbody><tr>
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/spock/w/list" method="GET" style="display: inline;">
+ <select id="can" name="can" style="font-size: 92%;">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5" {is="" can="" 5="" }selected="selected" {end}="">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input size="38" id="searchq" name="q" autocomplete="off" style="font-size: 92%;" type="text"></span>
+ 
+ 
+ <input value="Search" style="font-size: 92%;" type="submit">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="bevel-right" height="4" valign="top" align="right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</tbody></table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol">
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+
+ <style type="text/css">
+ .artifactcomment {
+ margin: .5em 0 0 0;
+ padding: .3em 0 .3em .3em;
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentlist {
+ border-bottom: 3px solid #c3d9ff;
+ }
+ #commentform { padding-top: 1em; }
+ .delcom { background: #e8e8e8 }
+ .commentcontent { margin: 1em 0;}
+ </style>
+
+
+ <div id="wikicontent">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ 
+ <td class="vt" id="wikimaincol" width="100%">
+ 
+ <div style="float: right; width: 18em;" id="wikimeta">
+ <div class="pmeta_bubble_bg">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <table style="padding: 5px;">
+ <tbody><tr><td colspan="2" style="padding-bottom: 5px;">Updated <span title="Sat Feb 20 09:35:26 2010">Feb 20, 2010</span>
+ 
+ by <a style="white-space: nowrap;" href="http://code.google.com/u/pniederw/">pniederw</a>
+ </td></tr>
+ 
+ <tr><th class="vt">Labels:</th>
+ <td>
+ 
+ <a href="http://code.google.com/p/spock/w/list?q=label:Featured" title="Listed on project home page">Featured</a>
+ 
+ </td>
+ </tr>
+ 
+ 
+ </tbody></table>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ </div>
+ 
+ <div id="wikiheader" style="margin-bottom: 1em;">
+ 
+ <img id="star_img" src="SpockBasics_files/star_off.gif" style="cursor: pointer;" onclick="_CS_toggleStar(this,
+ '',
+ {'scope': 'wiki',
+ 'user': '_CURRENT_USER',
+ 'item': 'spock:SpockBasics',
+ 'token': codesite_token
+ });" height="15" width="15">
+ 
+ &nbsp;
+ <span style="font-size: 120%; font-weight: bold;">SpockBasics</span>
+ &nbsp;
+ 
+ 
+ <div style="font-style: italic; margin-top: 3px;">Anatomy of a Spock specification.</div>
+ 
+ </div>
+ <p>This chapter assumes that you have a basic knowledge of Groovy and 
+unit testing. If you are a Java developer but haven't heard about 
+Groovy, don't worry - Groovy will feel very familiar to you! In fact, 
+one of Groovy's main design goals is to be <i>the</i> scripting language alongside Java. So just follow along and consult the <a href="http://groovy.codehaus.org/Documentation" rel="nofollow">Groovy documentation</a> whenever you feel like it. </p><p>The goal of this chapter is to </p><ul><li>teach you enough about Spock to write real-world Spock specifications </li><li>whet your appetite for more </li></ul><p>To learn more about Groovy, go to <a href="http://groovy.codehaus.org/" rel="nofollow">http://groovy.codehaus.org</a>. </p><p>To learn more about unit testing, go to <a href="http://en.wikipedia.org/wiki/Unit_testing" rel="nofollow">http://en.wikipedia.org/wiki/Unit_testing</a>. </p><h2><a name="Terminology">Terminology</a><a href="#Terminology" class="section_anchor">¶</a></h2><p>Let's start with a few definitions: Spock lets you write <i>specifications</i> that describe expected <i>features</i>
+ (properties, aspects) exhibited by a system of interest. The system of 
+interest could be anything between a single class and a whole 
+application, and is also called <i>system under specification (SUS)</i>.
+ The description of a feature starts from a specific snapshot of the SUS
+ and its collaborators; this snapshot is called the feature's <i>fixture</i>. </p><p>The
+ following sections walk you through all building blocks of which a 
+Spock specification may be composed. A typical specification uses only a
+ subset of them. </p><h2><a name="Imports">Imports</a><a href="#Imports" class="section_anchor">¶</a></h2><pre class="prettyprint"><span class="kwd">import</span><span class="pln"> spock</span><span class="pun">.</span><span class="pln">lang</span><span class="pun">.*</span></pre><p>Package <tt>spock.lang</tt> contains the most important types for writing specifications. </p><h2><a name="Specification">Specification</a><a href="#Specification" class="section_anchor">¶</a></h2><pre class="prettyprint"><span class="kwd">class</span><span class="pln"> </span><span class="typ">MyFirstSpecification</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Specification</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="com">// fields</span><span class="pln"><br>&nbsp; </span><span class="com">// fixture methods</span><span class="pln"><br>&nbsp; </span><span class="com">// feature methods</span><span class="pln"><br>&nbsp; </span><span class="com">// helper methods</span><span class="pln"><br></span><span class="pun">}</span></pre><p>A specification is represented as a Groovy class that extends from <tt>spock.lang.Specification</tt>. The name of a specification usually relates to the system or system operation described by the specification. For example, <tt>CustomerSpec</tt>, <tt>H264VideoPlayback</tt>, and <tt>ASpaceshipAttackedFromTwoSides</tt> are all reasonable names for a specification. </p><p>Class <tt>Specification</tt> contains a number of useful methods for writing specifications. Furthermore it instructs JUnit to run specification with <tt>Sputnik</tt>,
+ Spock's JUnit runner. Thanks to Sputnik, Spock specifications can be 
+run by all modern IDEs and build tools. (So much for the theory. See <a href="http://code.google.com/p/spock/wiki/GettingStarted">Getting started</a> for what already works now, and what can be expected to work in the near future.) </p><h2><a name="Fields">Fields</a><a href="#Fields" class="section_anchor">¶</a></h2><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> obj </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ClassUnderSpecification</span><span class="pun">()</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> coll </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Collaborator</span><span class="pun">()</span></pre><p>Instance
+ fields are a good place to store objects belonging to the 
+specification's fixture. It is good practice to initialize them right at
+ the point of declaration. (Semantically, this is equivalent to 
+initializing them at the very beginning of the <tt>setup()</tt> method.) Objects stored into instance fields are <i>not</i>
+ shared between feature methods. Instead, every feature method gets its 
+own object. This helps to isolate feature methods from each other, which
+ is often a desirable goal. </p><pre class="prettyprint"><span class="lit">@Shared</span><span class="pln"> res </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">VeryExpensiveResource</span><span class="pun">()</span></pre><p>Sometimes
+ you need to share an object between feature methods. For example, the 
+object might be very expensive to create, or you might want your feature
+ methods to interact with each other. To achieve this, declare a <tt>@Shared</tt>
+ field. Again it's best to initialize the field right at the point of 
+declaration. (Semantically, this is equivalent to initializing the field
+ at the very beginning of the <tt>setupSpec()</tt> method.) </p><pre class="prettyprint"><span class="kwd">static</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> PI </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3.141592654</span></pre><p>Static
+ fields should only be used for constants. Otherwise shared fields are 
+preferable, because their semantics with respect to sharing are more 
+well-defined. </p><h2><a name="Fixture_Methods">Fixture Methods</a><a href="#Fixture_Methods" class="section_anchor">¶</a></h2><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> setup</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{}</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">// run before every feature method</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> cleanup</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{}</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">// run after every feature method</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> setupSpec</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{}</span><span class="pln"> &nbsp; &nbsp; </span><span class="com">// run before the first feature method</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> cleanupSpec</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{}</span><span class="pln"> &nbsp; </span><span class="com">// run after the last feature method</span></pre><p>Fixture
+ methods are responsible for setting up and cleaning up the environment 
+in which feature methods are run. Usually it's a good idea to use a 
+fresh fixture for every feature method, which is what the <tt>setup()</tt> and <tt>cleanup()</tt>
+ methods are for. Occasionally it makes sense for feature methods to 
+share a fixture, which is achieved by using shared fields together with 
+the <tt>setupSpec()</tt> and <tt>cleanupSpec()</tt> methods. All fixture methods are optional.  </p><p>Note: The <tt>setupSpec()</tt> and <tt>cleanupSpec()</tt> methods may not reference instance fields. </p><h2><a name="Feature_Methods">Feature Methods</a><a href="#Feature_Methods" class="section_anchor">¶</a></h2><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"pushing an element on the stack"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="com">// blocks go here</span><span class="pln"><br></span><span class="pun">}</span></pre><p>Feature
+ methods are the heart of a specification. They describe the features 
+(properties, aspects) that you expect to find in the system under 
+specification. By convention, feature methods are named with String 
+literals. Try to choose good names for your feature methods, and feel 
+free to use any characters you like! </p><p>Conceptually, a feature method consists of four phases: </p><ul><li>Set up the feature's fixture </li><li>Provide a <i>stimulus</i> to the system under specification </li><li>Describe the <i>response</i> expected from the system </li><li>Clean up the feature's fixture </li></ul>
+  Whereas the first and last phases are optional, the stimulus and 
+response phases are always present (except in interacting feature 
+methods), and may occur more than once.   <h3><a name="Blocks">Blocks</a><a href="#Blocks" class="section_anchor">¶</a></h3><p><img src="SpockBasics_files/Blocks2Phases.bin" align="right"> </p><p>Spock
+ has built-in support for implementing each of the conceptual phases of a
+ feature method. To this end, feature methods are structured into 
+so-called <i>blocks</i>. Blocks start with a label, and extend to the 
+beginning of the next block, or the end of the method. There are six 
+kinds of blocks: <tt>setup</tt>, <tt>when</tt>, <tt>then</tt>, <tt>expect</tt>, <tt>cleanup</tt>, and <tt>where</tt> blocks. Any statements between the beginning of the method and the first explicit block belong to an implicit <tt>setup</tt> block. </p><p>A
+ feature method must have at least one explicit (i.e. labelled) block - 
+in fact, the presence of an explicit block is what makes a method a 
+feature method. Blocks divide a method into distinct sections, and 
+cannot be nested. </p><p>The picture on the right shows how blocks map to the conceptual phases of a feature method. The <tt>where</tt> block has a special role, which will be revealed shortly. But first, let's have a closer look at the other blocks. </p><h4><a name="Setup_Blocks">Setup Blocks</a><a href="#Setup_Blocks" class="section_anchor">¶</a></h4><pre class="prettyprint"><span class="pln">setup</span><span class="pun">:</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> stack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Stack</span><span class="pun">()</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> elem </span><span class="pun">=</span><span class="pln"> </span><span class="str">"push me"</span></pre><p>The <tt>setup</tt>
+ block is where you do any setup work for the feature that you are 
+describing. It may not be preceded by other blocks, and may not be 
+repeated. A <tt>setup</tt> block doesn't have any special semantics. The <tt>setup:</tt> label is optional and may be omitted, resulting in an <i>implicit</i> <tt>setup</tt> block. The <tt>given:</tt> label is an alias for <tt>setup:</tt>, and sometimes leads to a more readable feature method description (see section Specification as Documentation).   </p><h4><a name="When_and_Then_Blocks">When and Then Blocks</a><a href="#When_and_Then_Blocks" class="section_anchor">¶</a></h4><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"> &nbsp; </span><span class="com">// stimulus</span><span class="pln"><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"> &nbsp; </span><span class="com">// response</span></pre><p>The <tt>when</tt> and <tt>then</tt> blocks always occur together. They describe a stimulus and the expected response. Whereas <tt>when</tt> blocks may contain arbitrary code, <tt>then</tt> blocks are restricted to <i>conditions</i>, <i>exception conditions</i>, <i>interactions</i>, and variable definitions. A feature method may contain multiple pairs of <tt>when-then</tt> blocks. </p><h5><a name="Conditions">Conditions</a><a href="#Conditions" class="section_anchor">¶</a></h5><p>Conditions
+ describe an expected state, much like JUnit's assertions. However, 
+conditions are written as plain boolean expressions, eliminating the 
+need for an assertion API. (More precisely, a condition may also produce
+ a non-boolean value, which will then be evaluated according to Groovy 
+truth.) Let's see some conditions in action: </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="pln">elem</span><span class="pun">)</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br></span><span class="pun">!</span><span class="pln">stack</span><span class="pun">.</span><span class="pln">empty<br>stack</span><span class="pun">.</span><span class="pln">size</span><span class="pun">()</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">peek</span><span class="pun">()</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> elem</span></pre><p>Tip:
+ Try to keep the number of conditions per feature method small. One to 
+five conditions is a good guideline. If you have more than that, ask 
+yourself if you are specifying multiple unrelated features at once. If 
+the answer is yes, break up the feature method in several smaller ones. 
+If your conditions only differ in their values, consider using <a href="http://code.google.com/p/spock/wiki/Parameterizations">parameterized feature methods</a>. </p><p>What kind of feedback does Spock provide if a condition is violated? Let's try and change the second condition to <tt>stack.size() == 2</tt>. Here is what we get: </p><pre class="prettyprint"><span class="typ">Condition</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> satisfied</span><span class="pun">:</span><span class="pln"><br><br>stack</span><span class="pun">.</span><span class="pln">size</span><span class="pun">()</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">2</span><span class="pln"><br></span><span class="pun">|</span><span class="pln"> &nbsp; &nbsp; </span><span class="pun">|</span><span class="pln"> &nbsp; &nbsp; &nbsp;</span><span class="pun">|</span><span class="pln"> &nbsp; <br></span><span class="pun">|</span><span class="pln"> &nbsp; &nbsp; </span><span class="lit">1</span><span class="pln"> &nbsp; &nbsp; &nbsp;</span><span class="kwd">false</span><span class="pln"><br></span><span class="pun">[</span><span class="pln">push me</span><span class="pun">]</span></pre><p>As
+ you can see, Spock captures all values produced during the evaluation 
+of a condition, and presents them in an easily digestible form. Nice, 
+isn't it? </p><h5><a name="Implicit_and_explicit_conditions">Implicit and explicit conditions</a><a href="#Implicit_and_explicit_conditions" class="section_anchor">¶</a></h5><p>Conditions are an essential ingredient of <tt>then</tt> blocks and <tt>expect</tt> blocks. Except for calls to <tt>void</tt>
+ methods and expressions classified as interactions, all top-level 
+expressions in these blocks are implicitly treated as conditions. To use
+ conditions in other places, you need to designate them with Groovy's 
+assert keyword: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> setup</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; stack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Stack</span><span class="pun">()</span><span class="pln"><br>&nbsp; </span><span class="kwd">assert</span><span class="pln"> stack</span><span class="pun">.</span><span class="pln">empty<br></span><span class="pun">}</span></pre><p>If an explicit condition is violated, it will produce the same nice diagnostic message as an implicit condition. </p><h5><a name="Exception_Conditions">Exception Conditions</a><a href="#Exception_Conditions" class="section_anchor">¶</a></h5><p>Exception conditions are used to describe that a <tt>when</tt> block should throw an exception. They are defined using the <tt>thrown()</tt> method, passing along the expected exception type. For example, to describe that popping from an empty stack should throw an <tt>EmptyStackException</tt>, you could write the following: </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">()</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>thrown</span><span class="pun">(</span><span class="typ">EmptyStackException</span><span class="pun">)</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">empty</span></pre><p>As
+ you can see, exception conditions may be followed by other conditions 
+(and even other blocks). This is particularly useful for specifying the 
+expected content of an exception. To access the exception, first bind it
+ to a variable: </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">()</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> e </span><span class="pun">=</span><span class="pln"> thrown</span><span class="pun">(</span><span class="typ">EmptyStackException</span><span class="pun">)</span><span class="pln"><br>e</span><span class="pun">.</span><span class="pln">cause </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span></pre><p>Alternatively, you may use a slight variation of the above syntax: </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>stack</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">()</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br></span><span class="typ">EmptyStackException</span><span class="pln"> e </span><span class="pun">=</span><span class="pln"> thrown</span><span class="pun">()</span><span class="pln"><br>e</span><span class="pun">.</span><span class="pln">cause </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span></pre><p>This
+ syntax has two small advantages: First, the exception variable is 
+strongly typed, making it easier for IDEs to offer code completion. 
+Second, the condition reads a bit more like a sentence ("then an 
+EmptyStackException is thrown"). Note that if no exception type is 
+passed to the <tt>thrown()</tt> method, it is inferred from the variable type on the left-hand side. </p><p>Sometimes we need to convey that an exception should <strong>not</strong> be thrown. For example, let's try to express that a <tt>HashMap</tt> should accept a <tt>null</tt> key: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"HashMap accepts null key"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; setup</span><span class="pun">:</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> map </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HashMap</span><span class="pun">()</span><span class="pln"><br>&nbsp; map</span><span class="pun">.</span><span class="pln">put</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> </span><span class="str">"elem"</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">}</span></pre><p>This
+ works but doesn't reveal the intention of the code. Did someone just 
+leave the building before he had finished implementing this method? 
+After all, where are the conditions? Fortunately, we can do better: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"HashMap accepts null key"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; setup</span><span class="pun">:</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> map </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HashMap</span><span class="pun">()</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>&nbsp; map</span><span class="pun">.</span><span class="pln">put</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> </span><span class="str">"elem"</span><span class="pun">)</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>&nbsp; notThrown</span><span class="pun">(</span><span class="typ">NullPointerException</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">}</span></pre><p>By using <tt>notThrown()</tt>, we make it clear that in particular a NullPointerException should not be thrown. (As per the contract of <tt>Map.put()</tt>, this would be the right thing to do for a map that doesn't support <tt>null</tt> keys.) However, the method will also fail if any other exception is thrown.    </p><h5><a name="Interactions">Interactions</a><a href="#Interactions" class="section_anchor">¶</a></h5><p>Whereas
+ conditions describe an object's state, interactions describe how 
+objects communicate with each other. Interactions are devoted a whole <a href="http://code.google.com/p/spock/wiki/Interactions">chapter</a>,
+ and so we only give a short example here. Suppose we want to describe 
+the flow of events from a publisher to its subscribers. Here is the 
+code: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"events are published to all subscribers"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> subscriber1 </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Mock</span><span class="pun">(</span><span class="typ">Subscriber</span><span class="pun">)</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> subscriber2 </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Mock</span><span class="pun">(</span><span class="typ">Subscriber</span><span class="pun">)</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> publisher </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Publisher</span><span class="pun">()</span><span class="pln"><br>&nbsp; publisher</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="pln">subscriber1</span><span class="pun">)</span><span class="pln"><br>&nbsp; publisher</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="pln">subscriber2</span><span class="pun">)</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>&nbsp; publisher</span><span class="pun">.</span><span class="pln">fire</span><span class="pun">(</span><span class="str">"event"</span><span class="pun">)</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">then</span><span class="pun">:</span><span class="pln"> <br>&nbsp; </span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber1</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="str">"event"</span><span class="pun">)</span><span class="pln"><br>&nbsp; </span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber2</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="str">"event"</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">}</span></pre><h4><a name="Expect_Blocks">Expect Blocks</a><a href="#Expect_Blocks" class="section_anchor">¶</a></h4><p>An <tt>expect</tt> block is more limited than a <tt>then</tt>
+ block in that it may only contain conditions and variable definitions. 
+It is useful in situations where it is more natural to describe stimulus
+ and expected response in a single expression. For example, compare the 
+following two attempts to describe the <tt>Math.max()</tt> method: </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>x </span><span class="pun">==</span><span class="pln"> </span><span class="lit">2</span></pre><pre class="prettyprint"><span class="pln">expect</span><span class="pun">:</span><span class="pln"><br></span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">2</span></pre><p>Although both snippets are semantically equivalent, the second one is clearly preferable. As a guideline, use <tt>when-then</tt> to describe methods with side effects, and <tt>expect</tt> to describe purely functional methods. </p><p>Tip: Leverage <a href="http://groovy.codehaus.org/groovy-jdk/" rel="nofollow">Groovy JDK</a> methods like <tt>any()</tt> and <tt>every()</tt> to create more expressive and succinct conditions. </p><h4><a name="Cleanup_Blocks">Cleanup Blocks</a><a href="#Cleanup_Blocks" class="section_anchor">¶</a></h4><pre class="prettyprint"><span class="pln">setup</span><span class="pun">:</span><span class="pln"><br></span><span class="kwd">def</span><span class="pln"> file </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">"/some/path"</span><span class="pun">)</span><span class="pln"><br>file</span><span class="pun">.</span><span class="pln">createNewFile</span><span class="pun">()</span><span class="pln"><br><br></span><span class="com">// ...</span><span class="pln"><br><br>cleanup</span><span class="pun">:</span><span class="pln"><br>file</span><span class="pun">.</span><span class="kwd">delete</span><span class="pun">()</span></pre><p>A <tt>cleanup</tt> block may only be followed by a <tt>where</tt> block, and may not be repeated. Like a <tt>cleanup</tt>
+ method, it is used to free any resources used by a feature method, and 
+is run even if (a previous part of) the feature method has produced an 
+exception. As a consequence, a <tt>cleanup</tt> block must be coded 
+defensively; in the worst case, it must gracefully handle the situation 
+where the first statement in a feature method has thrown an exception, 
+and all local variables still have their default values. </p><p>Tip: Groovy's safe dereference operator (<tt>foo?.bar()</tt>) simplifies writing defensive code. </p><p>Object-level specifications usually don't need a <tt>cleanup</tt>
+ method, as the only resource they consume is memory, which is 
+automatically reclaimed by the garbage collector. More coarse-grained 
+specifications, however, might use a <tt>cleanup</tt> block to clean up the file system, close a database connection, or shut down a network service. </p><p>Tip: If a specification is designed in such a way that all its feature methods require the same resources, use a <tt>cleanup()</tt> method; otherwise, prefer <tt>cleanup</tt> blocks. The same trade-off applies to <tt>setup()</tt> methods and <tt>setup</tt> blocks. </p><h4><a name="Where_Blocks">Where Blocks</a><a href="#Where_Blocks" class="section_anchor">¶</a></h4><p>A <tt>where</tt>
+ block always comes last in a method, and may not be repeated. It is 
+used to write data-driven feature methods. To give you an idea how this 
+is done, have a look at the following example: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"computing the maximum of two numbers"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; expect</span><span class="pun">:</span><span class="pln"><br>&nbsp; </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">max</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> c<br><br>&nbsp; </span><span class="kwd">where</span><span class="pun">:</span><span class="pln"><br>&nbsp; a </span><span class="pun">&lt;&lt;</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">]</span><span class="pln"><br>&nbsp; b </span><span class="pun">&lt;&lt;</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">]</span><span class="pln"><br>&nbsp; c </span><span class="pun">&lt;&lt;</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">]</span><span class="pln"><br></span><span class="pun">}</span></pre><p>This <tt>where</tt> block effectively creates two "versions" of the feature method: One where <tt>a</tt> is 5, <tt>b</tt> is 1, and <tt>c</tt> is 5, and another one where <tt>a</tt> is 3, <tt>b</tt> is 9, and <tt>c</tt> is 9. </p><p>The <tt>where</tt> block will be further explained in chapter <a href="http://code.google.com/p/spock/wiki/Parameterizations">Parameterizations</a>.  </p><h2><a name="Helper_Methods">Helper Methods</a><a href="#Helper_Methods" class="section_anchor">¶</a></h2><p>Sometimes
+ feature methods grow large and/or contain lots of duplicated code. In 
+such cases it can make sense to introduce one or more helper methods. 
+Two good candidates for helper methods are setup/cleanup logic and 
+complex conditions. Factoring out the former is straightforward, so 
+let's have a look at conditions: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"offered PC matches preferred configuration"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> pc </span><span class="pun">=</span><span class="pln"> shop</span><span class="pun">.</span><span class="pln">buyPc</span><span class="pun">()</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>&nbsp; pc</span><span class="pun">.</span><span class="pln">vendor </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Sunny"</span><span class="pln"><br>&nbsp; pc</span><span class="pun">.</span><span class="pln">clockRate </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2333</span><span class="pln"><br>&nbsp; pc</span><span class="pun">.</span><span class="pln">ram </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">4096</span><span class="pln"><br>&nbsp; pc</span><span class="pun">.</span><span class="pln">os </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Linux"</span><span class="pln"><br></span><span class="pun">}</span></pre><p>If
+ you happen to be a computer geek, your preferred PC configuration might
+ be very detailed, or you might want to compare offers from many 
+different shops. Therefore, let's factor out the conditions: </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> </span><span class="str">"offered PC matches preferred configuration"</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> pc </span><span class="pun">=</span><span class="pln"> shop</span><span class="pun">.</span><span class="pln">buyPc</span><span class="pun">()</span><span class="pln"><br>&nbsp; <br>&nbsp; </span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>&nbsp; matchesPreferredConfiguration</span><span class="pun">(</span><span class="pln">pc</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br><br></span><span class="kwd">def</span><span class="pln"> matchesPreferredConfiguration</span><span class="pun">(</span><span class="pln">pc</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; pc</span><span class="pun">.</span><span class="pln">vendor </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Sunny"</span><span class="pln"><br>&nbsp; </span><span class="pun">&amp;&amp;</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">clockRate </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2333</span><span class="pln"><br>&nbsp; </span><span class="pun">&amp;&amp;</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">ram </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">4096</span><span class="pln"><br>&nbsp; </span><span class="pun">&amp;&amp;</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">os </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Linux"</span><span class="pln"><br></span><span class="pun">}</span></pre><p>The new helper method <tt>matchesPreferredConfiguration()</tt> consists of a single boolean expression whose result is returned. (Since Groovy 1.5, the <tt>return</tt> keyword is no longer required here.) This is fine except for the way that an inadequate offer is now presented: </p><pre class="prettyprint"><span class="typ">Condition</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> satisfied</span><span class="pun">:</span><span class="pln"><br><br>matchesPreferredConfiguration</span><span class="pun">(</span><span class="pln">pc</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">|</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">|</span><span class="pln"><br></span><span class="kwd">false</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">...</span></pre><p>Not very helpful. Fortunately, we can do better: </p><pre class="prettyprint"><span class="kwd">void</span><span class="pln"> matchesPreferredConfiguration</span><span class="pun">(</span><span class="pln">pc</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">assert</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">vendor </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Sunny"</span><span class="pln"><br>&nbsp; </span><span class="kwd">assert</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">clockRate </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2333</span><span class="pln"><br>&nbsp; </span><span class="kwd">assert</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">ram </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">4096</span><span class="pln"><br>&nbsp; </span><span class="kwd">assert</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">os </span><span class="pun">==</span><span class="pln"> </span><span class="str">"Linux"</span><span class="pln"><br></span><span class="pun">}</span></pre><p>When
+ factoring out conditions into a helper method, two points need to be 
+considered: First, implicit conditions must be turned into explicit 
+conditions with the <tt>assert</tt> keyword. Second, the helper method must have return type <tt>void</tt>. Otherwise, Spock might interpret the return value as a failing condition, which is not what we want. </p><p>As expected, the improved helper method tells us exactly what's wrong: </p><pre class="prettyprint"><span class="typ">Condition</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> satisfied</span><span class="pun">:</span><span class="pln"><br><br></span><span class="kwd">assert</span><span class="pln"> pc</span><span class="pun">.</span><span class="pln">clockRate </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2333</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">|</span><span class="pln"> &nbsp;</span><span class="pun">|</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">|</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">|</span><span class="pln"> &nbsp;</span><span class="lit">1666</span><span class="pln"> &nbsp; &nbsp; &nbsp;</span><span class="kwd">false</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">...</span></pre><p>A
+ final advice: Although code reuse is generally a good thing, don't take
+ it too far. Be aware that the use of fixture and helper methods can 
+increase the coupling between feature methods. If you reuse too much or 
+the wrong code, you will end up with specifications that are fragile and
+ hard to evolve. </p><h2><a name="Specifications_as_Documentation">Specifications as Documentation</a><a href="#Specifications_as_Documentation" class="section_anchor">¶</a></h2><p>Well-written
+ specifications are a valuable source of information. Especially for 
+higher-level specifications targeting a wider audience than just 
+developers (architects, domain experts, customers, etc.), it makes sense
+ to provide more information in natural language than just the names of 
+specifications and features. Therefore, Spock provides a way to attach 
+textual descriptions to blocks: </p><pre class="prettyprint"><span class="pln">setup</span><span class="pun">:</span><span class="pln"> </span><span class="str">"open a database connection"</span><span class="pln"><br></span><span class="com">// code goes here</span></pre><p>Individual parts of a block can be described with <tt>and:</tt>: </p><pre class="prettyprint"><span class="pln">setup</span><span class="pun">:</span><span class="pln"> </span><span class="str">"open a database connection"</span><span class="pln"><br></span><span class="com">// code goes here</span><span class="pln"><br><br></span><span class="kwd">and</span><span class="pun">:</span><span class="pln"> </span><span class="str">"seed the customer table"</span><span class="pln"><br></span><span class="com">// code goes here</span><span class="pln"><br><br></span><span class="kwd">and</span><span class="pun">:</span><span class="pln"> </span><span class="str">"seed the product table"</span><span class="pln"><br></span><span class="com">// code goes here</span></pre><p>An <tt>and:</tt>
+ label followed by a description can be inserted at any (top-level) 
+position of a feature method, without altering the method's semantics. </p><p>In Behavior Driven Development, customer-facing features (called <i>stories</i>) are described in a given-when-then format. Spock directly supports this style of specification with the <tt>given:</tt> label: </p><pre class="prettyprint"><span class="pln">given</span><span class="pun">:</span><span class="pln"> </span><span class="str">"an empty bank account"</span><span class="pln"><br></span><span class="com">// ...</span><span class="pln"><br><br></span><span class="kwd">when</span><span class="pun">:</span><span class="pln"> </span><span class="str">"the account is credited $10"</span><span class="pln"><br></span><span class="com">// ...</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"> </span><span class="str">"the account's balance is $10"</span><span class="pln"><br></span><span class="com">// ...</span></pre><p>As noted before, <tt>given:</tt> is just an alias for <tt>setup:</tt>. </p><p>Block
+ descriptions are not only present in source code, but are also 
+available to the Spock runtime. Planned usages of block descriptions are
+ enhanced diagnostic messages, and textual reports that are equally 
+understood by all stakeholders. </p><h2><a name="Extensions">Extensions</a><a href="#Extensions" class="section_anchor">¶</a></h2><p>As
+ we have seen, Spock offers lots of functionality for writing 
+specifications. However, there always comes a time when something else 
+is needed. Therefore, Spock provides an interception-based extension 
+mechanism. Extensions are activated by annotations called <i>directives</i>. Currently, Spock ships with the following directives: </p><ul><li><tt>@Timeout</tt> </li></ul><blockquote>Sets a timeout for execution of a feature or fixture method. 
+</blockquote><ul><li><tt>@Ignore</tt> </li></ul><blockquote>Ignores a feature method. 
+</blockquote><ul><li><tt>@IgnoreRest</tt> </li></ul><blockquote>Ignores all feature methods not carrying this annotation. Useful for quickly running just a single method. 
+</blockquote><ul><li><tt>@FailsWith</tt> </li></ul><blockquote>Expects a
+ feature method to complete abruptly. @FailsWith has two use cases: 
+First, to document known bugs that cannot be resolved immediately. 
+Second, to replace exception conditions in certain corner cases where 
+the latter cannot be used (like specifying the behavior of exception 
+conditions). In all other cases, exception conditions are preferable. 
+</blockquote><p>    To learn how to implement your own directives and extensions, go to chapter <a href="http://code.google.com/p/spock/wiki/Extensions">Extensions</a>. </p><h2><a name="Comparison_to_JUnit">Comparison to JUnit</a><a href="#Comparison_to_JUnit" class="section_anchor">¶</a></h2><p>Although
+ Spock uses a different terminology, many of its concepts and features 
+are inspired from JUnit. Here is a rough comparison: </p><p></p><table><tbody><tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <strong>Spock</strong> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <strong>JUnit</strong> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Specification </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Test class </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>setup()</tt> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@Before</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>cleanup()</tt> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@After</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>setupSpec()</tt> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@BeforeClass</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>cleanupSpec()</tt> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@AfterClass</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Feature </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Test </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Parameterized feature </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Theory </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Condition </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Assertion </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Exception condition </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@Test(expected=...)</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@FailsWith</tt> </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> <tt>@Test(expected=...)</tt> </td></tr> <tr><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Interaction  </td><td style="border: 1px solid rgb(170, 170, 170); padding: 5px;"> Mock expectation (EasyMock, JMock, ...) </td></tr> </tbody></table>
+ </td> 
+ </tr>
+ </tbody></table>
+ </div>
+
+
+ 
+ <br>
+ 
+
+
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by
+ 
+ <a style="white-space: nowrap;" href="http://code.google.com/u/lsimaocosta/">lsimaocosta</a>,
+ 
+ </span>
+ <span class="date" title="Mon Oct 26 05:51:55 2009">Oct 26, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>cool! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ 
+ 
+ 
+ 
+ 
+ <div id="commentform">
+ <form action="../w/detail.do" method="post">
+ <table>
+ <tbody><tr><td class="vt">
+ <input name="pagename" value="SpockBasics" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+ <div>Enter a comment:</div>
+ <textarea name="content" rows="6" cols="80"></textarea><br><br>
+ <input name="submit" value="Submit" type="submit">
+ </td>
+ <td class="vt">
+ <div id="whb" class="tip" style="width: 15em;">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner closed" id="entrybubble">
+ <a class="ifClosed" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='opened'">show</a>
+ <a class="ifOpened" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='closed'">hide</a>
+ <b>Wiki markup help</b>
+ <div class="ifOpened">
+ <div style="padding: 2px; font-size: 96%;">
+ =Heading1=<br>
+ ==Heading2==<br>
+ ===Heading3===<br>
+ <br>
+ *bold* &nbsp; &nbsp;
+ _italic_<br>
+ `inline code`<br>
+ escape: `*`<br>
+ <br>
+ Indent lists 2 spaces:<br>
+ &nbsp;&nbsp;* bullet item<br>
+ &nbsp;&nbsp;# numbered list<br>
+ <br>
+ {{{<br>
+ verbatim code block<br>
+ }}}<br>
+ <br>
+ Horizontal rule<br>
+ ----
+ <br>
+ <br>
+ WikiWordLink<br>
+ [http://domain/page&nbsp;label]<br>
+ http://domain/page<br>
+ <br>
+ || table || cells ||<br>
+ 
+ </div><br>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new">More
+ examples</a>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new"><img src="SpockBasics_files/tearoff_icon.gif" height="16" width="16"></a>
+ </div>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+</div>
+<input name="wikihelp" id="wikihelp" value="closed" type="hidden">
+
+ </td></tr>
+ </tbody></table>
+ </form>
+ </div>
+ 
+ 
+ 
+
+<form name="delcom" action="../w/delComment.do" method="POST">
+ <input name="sequence_num" value="" type="hidden">
+ <input name="create_time" value="" type="hidden">
+ <input name="mode" value="" type="hidden">
+ <input name="pagename" value="SpockBasics" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+</form>
+
+
+
+ <script src="SpockBasics_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="SpockBasics_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ <script type="text/javascript" src="SpockBasics_files/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="SpockBasics_files/codesite_product_dictionary_ph.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ ©2010 Google -
+ <a href="http://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="http://code.google.com/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ <div style="display: none;" id="menuDiv-projects-dropdown" class="menuDiv instance0"><div class="menuCategory controls"><hr class="menuSeparator"><a href="http://code.google.com/more/" style="display: block;" class="menuItem">Find developer products...</a><a href="http://code.google.com/hosting/" style="display: block;" class="menuItem">Find open source projects...</a></div></div></body></html>

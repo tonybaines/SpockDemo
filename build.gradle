@@ -1,30 +1,26 @@
 apply plugin: 'groovy'
 apply plugin: 'code-quality'
 apply plugin: 'eclipse'
-apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/cpdGroovy.gradle'
-apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/perUserProjectProperties.gradle'
-apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/toolsNexusUpload.gradle'
-apply from:'https://collaborate.bt.com/svn/bt-dso/build/tags/gradle-1.1/cobertura.gradle'
 
+// Non-standard test directory
+  compileTestGroovy {
+  source = 'src/test/unit'
+}
 eclipseCp.outputDirectory ='ide/build'
 eclipseCp.testSrcDirs = ['src/test/unit']
-task debug << {
-  eclipseCp.metaClass.properties.each {println it.name }
-}
+
 // Stop codenarc warnings from failing the build
 codenarcMain.ignoreFailures = true
 codenarcTest.ignoreFailures = true
 
-compileTestGroovy {
-  source = 'src/test/unit'
-}
 
 repositories {
-	mavenRepo urls: "https://collaborate.bt.com/artefacts/content/groups/public"  //Nexus rep
+  mavenRepo urls: "http://repository.codehaus.org/"
+  mavenRepo urls: "https://collaborate.bt.com/artefacts/content/groups/public"  //Nexus rep
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.7.3'
+    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.7.4'
     groovy group: 'commons-cli', name: 'commons-cli', version: '1.2'
     testCompile 'org.spockframework:spock-core:0.4-groovy-1.7'
 }

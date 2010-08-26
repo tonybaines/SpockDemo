@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+ 
+
+
+ 
+ 
+ 
+
+
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = "9ea9e27f3925c0cf36e1a61a2ca3ab4b";
+ 
+ 
+ var logged_in_user_email = "Tony.Baines.1@googlemail.com";
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Interactions - 
+ spock -
+ 
+ Learn how to specify interactions between your objects. - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <link type="text/css" rel="stylesheet" href="Interactions_files/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="Interactions_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="http://code.google.com/feeds/p/spock/svnchanges/basic?path=/wiki/Interactions.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8688443596719512860/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+<script src="Interactions_files/ga.js" async="" type="text/javascript"></script></head><body class="t6">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-7292005-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ 
+ <b>Tony.Baines.1@gmail.com</b>
+ 
+ 
+ | <a href="http://code.google.com/u/Tony.Baines.1/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="http://code.google.com/u/Tony.Baines.1/" onclick="_CS_click('/gb/ph/profile');" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Fspock%2Fwiki%2FInteractions" onclick="_CS_click('/gb/ph/signout');"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px;"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+
+
+
+ <table style="padding: 0px; margin: 20px 0px 0px; width: 100%;" cellpadding="0" cellspacing="0">
+ <tbody><tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align: center;">
+ <a href="http://code.google.com/p/spock/">
+ 
+ <img src="Interactions_files/defaultlogo.png" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em;">
+ 
+ <div id="pname" style="margin: 0px 0px -3px;">
+ <a href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">spock</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="http://code.google.com/p/spock/" style="text-decoration: none; color: rgb(0, 0, 0);">the enterprise ready specification framework</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space: nowrap; text-align: right;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q">
+ <input name="projectsearch" value="Search projects" type="submit">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+
+ 
+<table id="mt" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ <th onclick="if (!cancelBubble) _go('/p/spock/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/w/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/issues/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/spock/source/checkout');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="http://code.google.com/p/spock/source/checkout">Source</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</tbody></table>
+<table class="st" border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+ <tbody><tr>
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/spock/w/list" method="GET" style="display: inline;">
+ <select id="can" name="can" style="font-size: 92%;">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5" {is="" can="" 5="" }selected="selected" {end}="">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input size="38" id="searchq" name="q" autocomplete="off" style="font-size: 92%;" type="text"></span>
+ 
+ 
+ <input value="Search" style="font-size: 92%;" type="submit">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td class="bevel-right" height="4" valign="top" align="right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</tbody></table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol">
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+
+ <style type="text/css">
+ .artifactcomment {
+ margin: .5em 0 0 0;
+ padding: .3em 0 .3em .3em;
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentlist {
+ border-bottom: 3px solid #c3d9ff;
+ }
+ #commentform { padding-top: 1em; }
+ .delcom { background: #e8e8e8 }
+ .commentcontent { margin: 1em 0;}
+ </style>
+
+
+ <div id="wikicontent">
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+ 
+ <td class="vt" id="wikimaincol" width="100%">
+ 
+ <div style="float: right; width: 18em;" id="wikimeta">
+ <div class="pmeta_bubble_bg">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <table style="padding: 5px;">
+ <tbody><tr><td colspan="2" style="padding-bottom: 5px;">Updated <span title="Tue May 25 12:32:56 2010">May 25, 2010</span>
+ 
+ by <a style="white-space: nowrap;" href="http://code.google.com/u/pniederw/">pniederw</a>
+ </td></tr>
+ 
+ 
+ </tbody></table>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ </div>
+ 
+ <div id="wikiheader" style="margin-bottom: 1em;">
+ 
+ <img id="star_img" src="Interactions_files/star_off.gif" style="cursor: pointer;" onclick="_CS_toggleStar(this,
+ '',
+ {'scope': 'wiki',
+ 'user': '_CURRENT_USER',
+ 'item': 'spock:Interactions',
+ 'token': codesite_token
+ });" height="15" width="15">
+ 
+ &nbsp;
+ <span style="font-size: 120%; font-weight: bold;">Interactions</span>
+ &nbsp;
+ 
+ 
+ <div style="font-style: italic; margin-top: 3px;">Learn how to specify interactions between your objects.</div>
+ 
+ </div>
+ <h3><a name="Creating_mocks">Creating mocks</a><a href="#Creating_mocks" class="section_anchor">¶</a></h3><p>Mocks
+ can be created for interfaces, non-final Java classes, and non-final 
+Groovy classes (experimental). All mocks are lenient. In other words, if
+ a method call does not match any interaction, the default value for the
+ method's return type is returned. </p><pre class="prettyprint"><span class="kwd">def</span><span class="pln"> subscriber </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Mock</span><span class="pun">(</span><span class="typ">Subscriber</span><span class="pun">)</span><span class="pln"> </span><span class="com">// "dynamic" style (mock name inferred from variable name)</span><span class="pln"><br><br></span><span class="typ">Subscriber</span><span class="pln"> subscriber </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Mock</span><span class="pun">()</span><span class="pln"> &nbsp; &nbsp;</span><span class="com">// "static" style" (mock name and type inferred from variable name and type)</span></pre><h3><a name="Global_vs._local_interactions">Global vs. local interactions</a><a href="#Global_vs._local_interactions" class="section_anchor">¶</a></h3><p>Interactions defined outside of a <tt>then</tt> block are called <i>global</i>. They are valid from the point of their definition to the end of the feature method. </p><pre class="prettyprint"><span class="pln">setup</span><span class="pun">:</span><span class="pln"><br>subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">true</span></pre><p>Interactions defined inside of a <tt>then</tt> block are called <i>local</i>. They are valid only within the preceding <tt>when</tt> block. </p><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"> publisher</span><span class="pun">.</span><span class="pln">send</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span></pre><h3><a name="Optional_vs._required_interactions">Optional vs. required interactions</a><a href="#Optional_vs._required_interactions" class="section_anchor">¶</a></h3><p>Optional interactions don't have a cardinality, and must have a return value. </p><pre class="prettyprint"><span class="kwd">then</span><span class="pun">:</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">true</span></pre><p>Required interactions must have a cardinality, and may have a return value. </p><pre class="prettyprint"><span class="kwd">then</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"> n </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span></pre><p>The
+ most commonly used combinations are global+optional (stubbing as part 
+of setup) and local+required (mocking as part of when-block), but the 
+other two combinations are allowed as well. </p><h3><a name="Cardinalities">Cardinalities</a><a href="#Cardinalities" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">n </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp;</span><span class="com">// exactly n times</span><span class="pln"><br><br></span><span class="pun">(</span><span class="pln">n</span><span class="pun">..</span><span class="pln">_</span><span class="pun">)</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// at least n times</span><span class="pln"><br><br></span><span class="pun">(</span><span class="pln">_</span><span class="pun">..</span><span class="pln">n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// at most n times </span></pre><h3><a name="Target_constraints">Target constraints</a><a href="#Target_constraints" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// receive is called on 'subscriber'</span></pre><pre class="prettyprint"><span class="pln">_</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// receive is called on any mock object</span></pre><h3><a name="Method_constraints">Method constraints</a><a href="#Method_constraints" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">subscriber</span><span class="pun">./</span><span class="kwd">set</span><span class="pun">.*/(</span><span class="pln">_</span><span class="pun">)</span><span class="pln"> </span><span class="com">// any setter is called on subscriber (any regular expression allowed)</span></pre><h3><a name="Argument_constraints">Argument constraints</a><a href="#Argument_constraints" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="pln">_</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">// any argument</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(!</span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">// any non-null argument</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="com">// any argument equal to event</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(!</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// any argument not equal to event</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="pln">_ </span><span class="kwd">as</span><span class="pln"> </span><span class="typ">Message</span><span class="pun">)</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// any argument that is-a Message (null is not allowed)</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> it</span><span class="pun">.</span><span class="pln">priority </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="com">// custom constraint</span></pre><h3><a name="Return_values">Return values</a><a href="#Return_values" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// single return value, repeated indefinitely</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;&gt;</span><span class="pln"> </span><span class="pun">[</span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">]</span><span class="pln"> &nbsp; &nbsp; </span><span class="com">// multiple return values (anything that Groovy can iterate over), last one repeated indefinitely</span><span class="pln"><br><br></span><span class="kwd">def</span><span class="pln"> random </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Random</span><span class="pun">()</span><span class="pln"><br>subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> random</span><span class="pun">.</span><span class="pln">nextBoolean</span><span class="pun">()</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="com">// custom return value</span><span class="pln"><br><br>subscriber</span><span class="pun">.</span><span class="pln">isAlive</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">TimeoutException</span><span class="pun">()</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="com">// custom action</span></pre><h3><a name="Strict_definition_of_interactions">Strict definition of interactions</a><a href="#Strict_definition_of_interactions" class="section_anchor">¶</a></h3><p>Given
+ that all mocks are lenient, how can I express that no interactions 
+other than the explicitely specified ones should take place? </p><pre class="prettyprint"><span class="com">/* expected interactions go here */</span><span class="pln"><br></span><span class="lit">0</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> _</span><span class="pun">.</span><span class="pln">_ </span><span class="com">// no (more) method call on any mock</span></pre><h3><a name="Explicit_denotation_of_interactions">Explicit denotation of interactions</a><a href="#Explicit_denotation_of_interactions" class="section_anchor">¶</a></h3><p>If an interaction definition in a <tt>then</tt> block depends on other code in the same block, this relationship has to be made explicit as follows: </p><pre class="prettyprint"><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>interaction </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="kwd">def</span><span class="pln"> count </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"><br>&nbsp; count </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="pln">_</span><span class="pun">)</span><span class="pln"><br></span><span class="pun">}</span></pre><p>The same is true for an interaction defined in a helper method: </p><pre class="prettyprint"><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br>interaction </span><span class="pun">{</span><span class="pln"><br>&nbsp; subscriberReceivesThreeMessages</span><span class="pun">()</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br><br></span><span class="pun">...</span><span class="pln"><br><br></span><span class="kwd">def</span><span class="pln"> subscriberReceivesThreeMessages</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; </span><span class="lit">3</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="pln">_</span><span class="pun">)</span><span class="pln"><br>&nbsp; </span><span class="com">// you may define additional interactions here</span><span class="pln"><br></span><span class="pun">}</span></pre><h2><a name="New_in_0.4">New in 0.4</a><a href="#New_in_0.4" class="section_anchor">¶</a></h2><h3><a name="Property_syntax">Property syntax</a><a href="#Property_syntax" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="pln">subscriber</span><span class="pun">.</span><span class="pln">alive </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="com">// may use property syntax instead of method syntax for reading values</span><span class="pln"><br>subscriber</span><span class="pun">./</span><span class="pln">a</span><span class="pun">.*/</span><span class="pln"> </span><span class="pun">&gt;&gt;</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="com">// regex also supported for properties</span></pre><h3><a name="Ordered_interactions">Ordered interactions</a><a href="#Ordered_interactions" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="kwd">when</span><span class="pun">:</span><span class="pln"><br>publisher</span><span class="pun">.</span><span class="pln">publish</span><span class="pun">.</span><span class="kwd">event</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br></span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber1</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"><br></span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber2</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// order of interaction within same then-block is not defined; hence, subscriber1 might be notified either before or after subscriber2</span><span class="pln"><br><br></span><span class="kwd">then</span><span class="pun">:</span><span class="pln"><br></span><span class="lit">1</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> subscriber3</span><span class="pun">.</span><span class="pln">receive</span><span class="pun">(</span><span class="kwd">event</span><span class="pun">)</span><span class="pln"> </span><span class="com">// must come after all interactions in previous then-blocks; hence, subscriber3 must be notified after both subscriber1 and subscriber2 </span></pre><h3><a name="Shortcut_notation_for_&quot;any_interaction&quot;">Shortcut notation for "any interaction"</a><a href="#Shortcut_notation_for_%22any_interaction%22" class="section_anchor">¶</a></h3><pre class="prettyprint"><span class="lit">0</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> _ </span><span class="com">// _ is shortcut for _._</span></pre><h3><a name="Sensible_default_behavior_for_equals(Object),_hashCode(),_toStri">Sensible default behavior for equals(Object), hashCode(), toString()</a><a href="#Sensible_default_behavior_for_equals%28Object%29,_hashCode%28%29,_toStri" class="section_anchor">¶</a></h3><p>By
+ default, a mock will only be equal to itself, will return 
+System.identityHashCode() for its hash code, and will return a 
+descriptive message for toString(). Nevertheless, these methods can 
+still be stubbed (or even mocked) if desired.  Furthermore, these 
+methods no longer match the wildcard method name <tt>_</tt>. This is to avoid fragile tests that break once a test is debugged and the debugger calls one of these methods.  </p>
+ </td> 
+ </tr>
+ </tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ 
+ 
+ <div id="commentform">
+ <form action="../w/detail.do" method="post">
+ <table>
+ <tbody><tr><td class="vt">
+ <input name="pagename" value="Interactions" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+ <div>Enter a comment:</div>
+ <textarea name="content" rows="6" cols="80"></textarea><br><br>
+ <input name="submit" value="Submit" type="submit">
+ </td>
+ <td class="vt">
+ <div id="whb" class="tip" style="width: 15em;">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner closed" id="entrybubble">
+ <a class="ifClosed" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='opened'">show</a>
+ <a class="ifOpened" href="#whb" style="float: right;" onclick="_toggleHidden(this); document.getElementById('wikihelp').value='closed'">hide</a>
+ <b>Wiki markup help</b>
+ <div class="ifOpened">
+ <div style="padding: 2px; font-size: 96%;">
+ =Heading1=<br>
+ ==Heading2==<br>
+ ===Heading3===<br>
+ <br>
+ *bold* &nbsp; &nbsp;
+ _italic_<br>
+ `inline code`<br>
+ escape: `*`<br>
+ <br>
+ Indent lists 2 spaces:<br>
+ &nbsp;&nbsp;* bullet item<br>
+ &nbsp;&nbsp;# numbered list<br>
+ <br>
+ {{{<br>
+ verbatim code block<br>
+ }}}<br>
+ <br>
+ Horizontal rule<br>
+ ----
+ <br>
+ <br>
+ WikiWordLink<br>
+ [http://domain/page&nbsp;label]<br>
+ http://domain/page<br>
+ <br>
+ || table || cells ||<br>
+ 
+ </div><br>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new">More
+ examples</a>
+ <a href="http://code.google.com/p/support/wiki/WikiSyntax" target="new"><img src="Interactions_files/tearoff_icon.gif" height="16" width="16"></a>
+ </div>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+</div>
+<input name="wikihelp" id="wikihelp" value="closed" type="hidden">
+
+ </td></tr>
+ </tbody></table>
+ </form>
+ </div>
+ 
+ 
+ 
+
+<form name="delcom" action="../w/delComment.do" method="POST">
+ <input name="sequence_num" value="" type="hidden">
+ <input name="create_time" value="" type="hidden">
+ <input name="mode" value="" type="hidden">
+ <input name="pagename" value="Interactions" type="hidden">
+ <input name="token" value="9ea9e27f3925c0cf36e1a61a2ca3ab4b" type="hidden">
+</form>
+
+
+
+ <script src="Interactions_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="Interactions_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ <script type="text/javascript" src="Interactions_files/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="Interactions_files/codesite_product_dictionary_ph.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ ©2010 Google -
+ <a href="http://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="http://code.google.com/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ <div style="position: absolute; top: 19px; left: 1129px; display: none;" id="menuDiv-projects-dropdown" class="menuDiv instance0"><div class="menuCategory controls first"><hr class="menuSeparator"><a href="http://code.google.com/more/" style="display: block;" class="menuItem">Find developer products...</a><a href="http://code.google.com/hosting/" style="display: block;" class="menuItem">Find open source projects...</a></div></div></body></html>
